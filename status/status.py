@@ -17,6 +17,7 @@ for row in csv_f:
 		url = "https://"+ip+"/api/1/status/unit"
 		r = requests.get(url, auth=(user, psw), verify=False)
 		data=json.loads(r.text)
+		print(data)
 		unitName=data['unitName']
 		machineName=data['machineName']
 		url = "https://"+cattura+"/api/status/capture"
