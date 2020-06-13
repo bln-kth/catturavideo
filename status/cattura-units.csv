@@ -1,0 +1,5 @@
+# CSV file to check status of Cattura Units
+# Skip all lines that starts with #
+# Follow entrys are mandatory ip-number,user,password
+# Remove example lines below, before you run the script
+"1.1.1.1","user","password"
