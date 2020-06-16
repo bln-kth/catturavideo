@@ -5,4 +5,4 @@ Show status of Cattura Units
 * Install/Download python:
 https://www.python.org/downloads/
 * Run the script:
-`python ????.py`
+`python status.py`
