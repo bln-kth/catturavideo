@@ -24,4 +24,4 @@ for row in csv_f:
 		r = requests.get(url, auth=(user, psw), verify=False)
 		data=json.loads(r.text)
 		state=data['state']
-		print ("unitName=",unitName,", machineName=",machineName,", state=",state,", ip=",cattura)
+		print ("unitName=",unitName,", machineName=",machineName,", state=",state,", ip=",ip)
