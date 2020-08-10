@@ -5,4 +5,5 @@ Start recording and upload the media to Kaltura/Play
 * Install/Download python:
 https://www.python.org/downloads/
 * Run the script:
-`python start.py <ip-number> <templateID> <ownerID>`
+`python start.py <Cattura-ipnumber> <Cattura-templateID> <Kaltura-ownerID>`
+`python stop.py <Cattura-ipnumber>`
