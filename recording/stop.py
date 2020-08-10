@@ -8,16 +8,14 @@ urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 try:
 	cattura = sys.argv[1]
 except:
-	cattura = input("ip-number: ")
+	print("\nStop recording with Cattura Unit.")
+	print("Use arg <ip-number>")
+	exit()
 else:
 	cattura = sys.argv[1]
 
-with open('secret.txt') as secret:
-	line = secret.readline()
-	line = line.rstrip()
-	line = line.split(",")
-	user=line[0]
-	psw=line[1]
+user = input("Username for "+cattura+": ")
+psw = input("Password for "+cattura+": ")
 
 url = "https://"+cattura+"/api/1/status/unit"
 r = requests.get(url, auth=(user, psw), verify=False)

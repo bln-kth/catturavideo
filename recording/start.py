@@ -10,30 +10,30 @@ try:
 except:
 	print("\nStart recording with Cattura Unit, it will upload to Kaltura if templateID is configured for that.")
 	print("Use arg <ip-number> <templateID> <ownerID>")
-	cattura = input("ip-number: ")
+	exit()
 else:
 	cattura = sys.argv[1]
 
 try:
 	templateID = sys.argv[2]
 except:
-	templateID = input("templateID: ")
+	print("\nStart recording with Cattura Unit, it will upload to Kaltura if templateID is configured for that.")
+	print("Use arg <ip-number> <templateID> <ownerID>")
+	exit()
 else:
 	templateID = sys.argv[2]
 
 try:
 	ownerID = sys.argv[3]
 except:
-	ownerID = input("ownerID: ")
+	print("\nStart recording with Cattura Unit, it will upload to Kaltura if templateID is configured for that.")
+	print("Use arg <ip-number> <templateID> <ownerID>")
+	exit()
 else:
 	ownerID = sys.argv[3]
 
-with open('secret.txt') as secret:
-	line = secret.readline()
-	line = line.rstrip()
-	line = line.split(",")
-	user=line[0]
-	psw=line[1]
+user = input("Username for "+cattura+": ")
+psw = input("Password for "+cattura+": ")
 
 url = "https://"+cattura+"/api/1/status/unit"
 r = requests.get(url, auth=(user, psw), verify=False)
