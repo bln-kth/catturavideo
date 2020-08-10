@@ -1,8 +1,8 @@
 # catturavideo-recording
-bla
+Start recording and upload the media to Kaltura/Play
 
 ## To run
 * Install/Download python:
 https://www.python.org/downloads/
 * Run the script:
-`python ????.py`
+`python start.py <ip-number> <templateID> <ownerID>`
