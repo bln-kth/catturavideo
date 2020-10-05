@@ -1,6 +1,5 @@
 # catturavideo-status
 Show status of Cattura Units
-Test
 
 ## To run
 * Install/Download python:
